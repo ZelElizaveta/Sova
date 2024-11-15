@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сова</title>
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" >Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#training">Обучение</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="mobileMenuLabel">
+				<img src="assets/img/logo.png" alt="Logo" class="logo-img">
+			</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>	
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home" >Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#training">Обучение</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+  </div>
+		<div class="social-links">
+      <h6>Мы в социальных сетях:</h6>
+      <ul class="list-unstyled d-flex flex-row">
+        <li>
+          <a href="https://t.me/art_nail_sova" class="nav-link" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+						<g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.55556,3.55556)"><path d="M36,12c13.255,0 24,10.745 24,24c0,13.255 -10.745,24 -24,24c-13.255,0 -24,-10.745 -24,-24c0,-13.255 10.745,-24 24,-24zM44.279,45.783c0.441,-1.354 2.51,-14.853 2.765,-17.513c0.077,-0.806 -0.177,-1.341 -0.676,-1.58c-0.603,-0.29 -1.496,-0.145 -2.533,0.229c-1.421,0.512 -19.59,8.227 -20.64,8.673c-0.995,0.423 -1.937,0.884 -1.937,1.552c0,0.47 0.279,0.734 1.047,1.008c0.799,0.285 2.812,0.895 4.001,1.223c1.145,0.316 2.448,0.042 3.178,-0.412c0.774,-0.481 9.71,-6.46 10.351,-6.984c0.641,-0.524 1.152,0.147 0.628,0.672c-0.524,0.524 -6.657,6.477 -7.466,7.301c-0.982,1.001 -0.285,2.038 0.374,2.453c0.752,0.474 6.163,4.103 6.978,4.685c0.815,0.582 1.641,0.846 2.398,0.846c0.757,0 1.155,-0.996 1.532,-2.153z"></path></g></g>
+						</svg>
+					</a>
+        </li>
+        <li>
+          <a href="https://vk.com/art_nail_sova" class="nav-link" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" class="vk">
+							<g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,12.682 10.318,23 23,23c12.683,0 23,-10.318 23,-23c0,-12.682 -10.317,-23 -23,-23zM34.973,29.535c2.237,1.986 2.702,2.695 2.778,2.816c0.927,1.47 -1.028,1.649 -1.028,1.649h-4.12c0,0 -1.003,0.011 -1.86,-0.557c-1.397,-0.915 -2.86,-2.689 -3.888,-2.381c-0.863,0.258 -0.855,1.424 -0.855,2.421c0,0.357 -0.307,0.517 -1,0.517c-0.693,0 -0.981,0 -1.288,0c-2.257,0 -4.706,-0.76 -7.149,-3.313c-3.456,-3.609 -6.487,-10.879 -6.487,-10.879c0,0 -0.179,-0.366 0.016,-0.589c0.221,-0.25 0.822,-0.218 0.822,-0.218l3.995,-0.001c0,0 0.376,0.071 0.646,0.261c0.223,0.156 0.347,0.454 0.347,0.454c0,0 0.671,2.216 1.526,3.629c1.67,2.758 2.447,2.828 3.014,2.531c0.828,-0.43 0.558,-3.362 0.558,-3.362c0,0 0.037,-1.259 -0.395,-1.82c-0.333,-0.434 -0.97,-0.665 -1.248,-0.701c-0.225,-0.029 0.151,-0.423 0.63,-0.648c0.64,-0.285 1.511,-0.358 3.013,-0.344c1.169,0.011 1.506,0.081 1.962,0.186c1.379,0.318 1.038,1.157 1.038,4.103c0,0.944 -0.13,2.271 0.582,2.711c0.307,0.19 1.359,0.422 3.231,-2.618c0.889,-1.442 1.596,-3.834 1.596,-3.834c0,0 0.146,-0.263 0.373,-0.393c0.232,-0.133 0.225,-0.13 0.543,-0.13c0.318,0 3.507,-0.025 4.207,-0.025c0.699,0 1.355,-0.008 1.468,0.402c0.162,0.589 -0.516,2.607 -2.234,4.797c-2.823,3.594 -3.136,3.258 -0.793,5.336z"></path></g></g>
+						</svg>
+					</a>
+        </li>
+        <li>
+          <a href="https://wa.me/79232890512" class="nav-link" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" class="vk">
+							<g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g>
+						</svg>
+					</a>
+        </li>
+				<li>
+          <a href="https://www.instagram.com/studio_sova_krsk?igsh=MTBzcXA2eDlwbGk3Mw==" class="nav-link" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" class="vk">
+							<g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
+						</svg>
+					</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center hero-content">
+        <div class="col-lg-6 hero-text">
+          <h1>Сова</h1>
+          <p>Доверьте красоту своих рук профессионалу и наслаждайтесь идеальным результатом без компромиссов &#9829;</p>
+          <a href="https://dikidi.net/1588514" class="btn btn-primary hero-btn" target="_blank">Записаться</a>
+        </div>
+        <div class="col-lg-6 hero-image">
+          <img src="assets/img/photo_2024-03-25_18-36-27.webp" alt="Маникюр" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 about-image">
+          <img src="assets/img/diana.webp" alt="О нас" class="img-fluid">
+        </div>
+        <div class="col-lg-6 about-text">
+          <h2>О нас</h2>
+          <p>Меня зовут Диана, и я являюсь основателем салона «Сова». </p>
+          <p>
+            За более чем 15 лет работы в индустрии красоты я выработала высокие стандарты, на которых строится мой салон.
+          </p>
+          <p>
+            Мы делаем ставку на качество и безопасность каждой процедуры, чтобы вы чувствовали себя уверенно и комфортно. В нашем салоне возможен дизайн любой сложности — от классических решений до креативных и уникальных стилей. А чтобы ваш визит был еще приятнее, мы всегда предложим вам чашечку вкусного кофе.
+          </p>
+          <p>
+            Наши мастера создают маникюр, от которого невозможно оторвать глаз. Мы заботимся о каждой детали, чтобы вы оставались довольны не только результатом, но и атмосферой уюта и профессионализма.
+          </p>
+          <a href="#portfolio" class="btn btn-secondary">Наши работы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Наши услуги</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="assets/img/manicur.webp" class="card-img-top" alt="Маникюр">
+            <div class="card-body">
+              <h5 class="card-title">Маникюр</h5>
+              <p class="card-text">Качественный маникюр с использованием лучших материалов и современного оборудования.</p>
+              <a href="https://dikidi.net/1588514" class="btn btn-primary" target="_blank">Записаться</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="assets/img/narashivanie.webp" class="card-img-top" alt="Наращивание ногтей">
+            <div class="card-body">
+              <h5 class="card-title">Наращивание ногтей</h5>
+              <p class="card-text">Красивые и прочные ногти, которые подчеркнут ваш стиль и индивидуальность.</p>
+              <a href="https://dikidi.net/1588514" class="btn btn-primary" target="_blank">Записаться</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="assets/img/pedicur.webp" class="card-img-top" alt="Педикюр">
+            <div class="card-body">
+              <h5 class="card-title">Педикюр</h5>
+              <p class="card-text">Идеальный педикюр для здоровья и красоты ваших ног с вниманием к деталям.</p>
+              <a href="https://dikidi.net/1588514" class="btn btn-primary" target="_blank">Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Наши работы</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/1.webp" alt="Работа 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/2.webp" alt="Работа 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/3.webp" alt="Работа 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/4.webp" alt="Работа 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/9.webp" alt="Работа 9">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/5.webp" alt="Работа 5">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/6.webp" alt="Работа 6">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/7.webp" alt="Работа 7">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/8.webp" alt="Работа 8">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="training">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 about-text">
+          <h2>Обучение</h2>
+          <p>
+            Мы проводим профессиональные курсы маникюра, педикюра и наращивания ногтей. 
+            Обучение проходит в комфортной обстановке с индивидуальным подходом к каждому ученику.
+          </p>
+          <p>
+            В процессе обучения вы освоите современные техники и получите ценные знания, которые помогут 
+            вам стать мастером своего дела. Мы делаем акцент на практику, чтобы вы могли сразу приступить к работе.
+          </p>
+          <a href="https://www.instagram.com/studio_sova_krsk?igsh=MTBzcXA2eDlwbGk3Mw==" class="btn btn-secondary" target="_blank">Узнать подробнее</a>
+        </div>
+        <div class="col-lg-6 about-image">
+          <img src="assets/img/training.webp" alt="Обучение" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts-container">
+      <div class="contacts-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2228.32609732028!2d92.90525887689509!3d56.047656369242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7af1b202dee19%3A0x52b8ef0fbf37dc9f!2z0YPQuy4g0JDQu9C10LrRgdC10LXQstCwLCA0OSwg0JrRgNCw0YHQvdC-0Y_RgNGB0LosINCa0YDQsNGB0L3QvtGP0YDRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGPLCA2NjAwNzc!5e0!3m2!1sru!2shu!4v1731691895931!5m2!1sru!2shu" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="contacts-info">
+        <h2>Контакты</h2>
+        <p><strong>Адрес:</strong>г. Красноярск, ул. Алексеева, д. 49</p>
+        <p><strong>Телефон:</strong> <a href="tel:+79232890512">+7 (923) 289-05-12</a></p>
+        <h2>График работы:</h2>
+        <p>Пн-ВС: 11:00 - 20:00</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-socials">
+        <ul class="list-unstyled d-flex flex-row">
+          <li>
+            <a href="https://t.me/art_nail_sova" class="nav-link telegram" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0,0,256,256">
+                <g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path></g></g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/art_nail_sova" class="nav-link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" class="vk">
+                <g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,12.682 10.318,23 23,23c12.683,0 23,-10.318 23,-23c0,-12.682 -10.317,-23 -23,-23zM34.973,29.535c2.237,1.986 2.702,2.695 2.778,2.816c0.927,1.47 -1.028,1.649 -1.028,1.649h-4.12c0,0 -1.003,0.011 -1.86,-0.557c-1.397,-0.915 -2.86,-2.689 -3.888,-2.381c-0.863,0.258 -0.855,1.424 -0.855,2.421c0,0.357 -0.307,0.517 -1,0.517c-0.693,0 -0.981,0 -1.288,0c-2.257,0 -4.706,-0.76 -7.149,-3.313c-3.456,-3.609 -6.487,-10.879 -6.487,-10.879c0,0 -0.179,-0.366 0.016,-0.589c0.221,-0.25 0.822,-0.218 0.822,-0.218l3.995,-0.001c0,0 0.376,0.071 0.646,0.261c0.223,0.156 0.347,0.454 0.347,0.454c0,0 0.671,2.216 1.526,3.629c1.67,2.758 2.447,2.828 3.014,2.531c0.828,-0.43 0.558,-3.362 0.558,-3.362c0,0 0.037,-1.259 -0.395,-1.82c-0.333,-0.434 -0.97,-0.665 -1.248,-0.701c-0.225,-0.029 0.151,-0.423 0.63,-0.648c0.64,-0.285 1.511,-0.358 3.013,-0.344c1.169,0.011 1.506,0.081 1.962,0.186c1.379,0.318 1.038,1.157 1.038,4.103c0,0.944 -0.13,2.271 0.582,2.711c0.307,0.19 1.359,0.422 3.231,-2.618c0.889,-1.442 1.596,-3.834 1.596,-3.834c0,0 0.146,-0.263 0.373,-0.393c0.232,-0.133 0.225,-0.13 0.543,-0.13c0.318,0 3.507,-0.025 4.207,-0.025c0.699,0 1.355,-0.008 1.468,0.402c0.162,0.589 -0.516,2.607 -2.234,4.797c-2.823,3.594 -3.136,3.258 -0.793,5.336z"></path></g></g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/79232890512" class="nav-link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" class="vk">
+                <g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/studio_sova_krsk?igsh=MTBzcXA2eDlwbGk3Mw==" class="nav-link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" class="vk">
+                <g fill="#ffd700" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
