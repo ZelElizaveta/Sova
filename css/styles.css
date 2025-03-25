@@ -5,6 +5,11 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .navbar {
   position: fixed; 
   top: 0; 
@@ -14,6 +19,12 @@ body {
   background-color: transparent;
   transition: background-color 0.3s; 
   z-index: 1000; 
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .navbar.scrolled {
@@ -26,14 +37,41 @@ body {
   margin-left: 20px;
 }
 
+
 .navbar .nav-link:hover {
   color: #9809a0; 
   transition: all 0.5s;
 }
 
+.logo {
+  margin-left: 30px;
+  height: 50px;
+}
+
 .logo-img {
-  width: 100px;
-  height: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+
+.logo-text {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.logo-subtext {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.burger {
+  color: #f3f3f3;
 }
 
 .hero {
@@ -385,11 +423,6 @@ footer {
   padding: 0 20px;
 }
 
-.footer-logo img {
-  width: 100px;
-  height: 50px;
-}
-
 .footer-socials ul {
   list-style: none;
   margin: 0;
@@ -412,6 +445,9 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  .logo-subtext {
+    font-size: 8px;
+  }
   .about-text {
     text-align: center;
   }
@@ -468,4 +504,5 @@ footer {
   .footer-logo img {
     margin-bottom: 20px;
   }
+
 }
